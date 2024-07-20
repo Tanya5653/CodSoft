@@ -17,18 +17,26 @@
     align-items: center;
     height: 80px;
 }
-nav .logo{
-    display: flex;
-    align-items: center;
-}
-nav  .logo i{
-    color:rgb(101, 22, 22);
+.logo {
+    display: inline-block;
+    padding: 0 25px;
+    height: 50px;
+    font: sans-serif;
     font-size: 28px;
-}
-nav .logo h1{
-    color: rgb(122, 29, 29);
-    font-size: 28px;
-}
+    font-weight: bold;
+    line-height: 50px;
+    border-radius: 25px;
+    background-color: #fff;
+    color: rgb(103, 35, 35);
+  }
+.logo img {
+    float: left;
+    margin: 0 10px 0 -25px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid rgb(81, 17, 17);
+  }
 nav ul li{
     display: inline-block;
     margin-left: 50px;
@@ -74,21 +82,24 @@ nav ul li.active a{
         padding: 0 5%;
 }
 .content .div-text span{
-    color: #fff;
+    font-family: Georgia;
+    color: #451b1bc9;
     font-size:25px ;
     text-transform: uppercase;
     letter-spacing:1.8px;
     font-weight: bold;
 }
 .content .div-text h3{
+    font-family: serif;
     text-transform: uppercase;
     letter-spacing:1.8px;
     font-size:50px ;
     font-weight: normal;
     margin: 20px 0 8px;
-    color: #5e3f2b;
+    color: #56341e;
 }
 .content .div-text h1{
+    font-family: serif;
     font-size:55px ;
     font-weight: bold;
     text-transform: uppercase;
@@ -98,14 +109,43 @@ nav ul li.active a{
 
 }
 .content .div-text p{
+    font-family: Georgia;
     color:#613e2add;
     font-size: 14px;
     line-height: 1.8;
     letter-spacing: 1.3px;
     margin-bottom: 55px;
 }
-
-
+.content .div-text .btn{
+    padding: 15px 35px;
+    background-color: #fff;
+    color: #623922;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration:none ;
+    border-radius:30px;
+    transition: 0.3s;
+}
+.content .div-text .btn:hover{
+    color:#fff;
+    background-color: #623922;
+}
 .container .div-img img{
     width: 350px;
+}
+.content .small-img {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translate(-50%);
+    display: flex;
+    gap: 20px;
+}
+.content .small-img img{
+    width:80px ;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.content .small-img img:hover{
+    transform: scale(1.2);
 }
